@@ -5,8 +5,8 @@ import StudentsOnCampus from "./components/StudentsOnCampus/StudentsOnCampus"
 import AddStudent from "../AddStudent/AddStudent.jsx"
 
 const Campuses = ( props ) => {
-
-  const { match: { params: { id } } } = props; 
+//
+  const { match: { params: { id } } } = props;
   const path = window.location.pathname;
   console.log(id);
   return (
