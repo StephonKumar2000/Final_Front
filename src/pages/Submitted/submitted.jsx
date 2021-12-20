@@ -5,7 +5,7 @@ const Submitted = () => {
     return (
         <div>
             <h1>Submitted</h1>
-            <Link to = "/"><button>GO HOME</button></Link>
+            <Link to = "/"><button>Go to Home</button></Link>
         </div>
     )
 }
