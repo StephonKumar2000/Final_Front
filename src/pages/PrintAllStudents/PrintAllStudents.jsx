@@ -9,7 +9,7 @@ class PrintAllStudents extends React.Component {
       campusName: "",
     };
   }
-
+//
   componentDidMount = async () => {
     try {
       console.log(this.props.campusId);
@@ -49,7 +49,7 @@ class PrintAllStudents extends React.Component {
         </div>
         <br />
         <div>
-        <button onClick={this.handleDelete}>DELETE</button>          
+        <button onClick={this.handleDelete}>DELETE</button>
         </div>
       </div>
     );
