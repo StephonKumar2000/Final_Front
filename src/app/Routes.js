@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-
+//
 import AllCampuses from "../pages/AllCampuses/Campuses.jsx";
 import Home from "../pages/Home/Home";
 import CampusInfo from "../pages/Campuses/components/Campus-info/campusInfo.jsx";
@@ -37,11 +37,11 @@ const Routes = () => {
 	 		 <Route exact path = "/student/:StudentId" component = {Student}/>
 
 			<Route exact path = "/addcampus">
-				<AddCampus/> 
+				<AddCampus/>
 			</Route>
 
 			<Route exact path = "/:path/:campusID/addstudent">
-				<AddStudentForm/> 
+				<AddStudentForm/>
 			</Route>
 			<Route path = "/submitted" component={Submitted}/>
 			<Route exact path = "/campuses/:id/edit" component={EditCampus}/>
