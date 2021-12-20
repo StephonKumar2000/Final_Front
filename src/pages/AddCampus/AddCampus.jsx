@@ -2,22 +2,22 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { withRouter } from "react-router-dom";
-
+//
 
 class AddCampus extends React.Component {
     constructor() {
         super();
         this.state = {
-            name: '', 
+            name: '',
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
       }
-    
+
       handleChange(event) {
         this.setState({value: event.target.value});
       }
-    
+
       async handleSubmit(event) {
         event.preventDefault();
         try {
@@ -26,9 +26,9 @@ class AddCampus extends React.Component {
         })
         this.props.history.goBack();
         } catch (error) {
-         console.error(error); 
-        } 
-      } 
+         console.error(error);
+        }
+      }
 
     render(){
         return (
@@ -37,15 +37,15 @@ class AddCampus extends React.Component {
                    <div className="col-7">
                    <label htmlFor = "campusname"></label>
                    <input type = "username" className="form-control form-control-lg" onChange={this.handleChange} placeholder="Campus Name"></input>
-                   </div>  
-               </div>  
-               <div className = "text-center"> 
+                   </div>
+               </div>
+               <div className = "text-center">
              <button type="submit" className = "btn btn-primary"> Add Campus</button>
-             </div> 
+             </div>
              </form>
 
-             
-        
+
+
         );
     }
 }
